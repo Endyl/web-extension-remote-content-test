@@ -1,0 +1,27 @@
+{
+	"manifest_version": 2,
+	"name": "RemoteContent",
+	"version": "0.0.1",
+	"description": "Trying to safely display scriptable remote content",
+	"icons": {
+		"48": "icons/icon.svg"
+	},
+	"applications": {
+		"gecko": {
+			"strict_min_version": "51.0a2"
+		}
+	},
+	"browser_action": {
+		"brwoser_style": true,
+		"default_icon": "icons/icon.svg",
+		"default_title": "RemoteContent"
+	},
+	"background": {
+		"scripts": [
+			"scripts/background/main.js"
+		]
+	},
+	"web_accessible_resources": [
+		"scripts/iframe.js"
+	]
+}
